@@ -1,4 +1,4 @@
-package com.twohdcd.Laptopshop.domain.DTO;
+package com.twohdcd.Laptopshop.domain;
 
 public class TestClass {
 }
