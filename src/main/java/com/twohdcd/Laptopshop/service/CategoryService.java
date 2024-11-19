@@ -22,7 +22,19 @@ public class CategoryService {
         return categoryRepository.findAll();
     }
 
-    public Category addProduct(Category Category) {
+    public Category getCategoryById(int id) {
+        return categoryRepository.findById(id);
+    }
+
+    public Category addCategory(Category Category) {
         return categoryRepository.save(Category);
+    }
+
+    public Category updateCategory(Category Category) {
+        return categoryRepository.save(Category);
+    }
+
+    public void deleteCategoryById(int id) {
+        categoryRepository.deleteById(id);
     }
 }

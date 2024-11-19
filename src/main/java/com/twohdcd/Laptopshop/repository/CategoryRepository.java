@@ -12,5 +12,7 @@ import java.util.List;
 public interface CategoryRepository extends JpaRepository<Category, Integer>, JpaSpecificationExecutor<Category> {
     public List<Category> findAll();
 
+    public Category findById(int id);
+
     public Category save(Category category);
 }
