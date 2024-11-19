@@ -32,7 +32,7 @@ public class CartDetailService {
         return cartDetailRepository.save(CartDetails);
     }
 
-    public void deleteCartDetailsById(int id) {
+    public void deleteCartDetailById(int id) {
         cartDetailRepository.deleteById(id);
     }
 }

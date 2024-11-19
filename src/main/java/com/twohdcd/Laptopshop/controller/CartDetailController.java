@@ -49,7 +49,7 @@ public class CartDetailController {
 
     @DeleteMapping("/cart-details/{id}")
     public ResponseEntity<String> deleteCartDetailsById(@PathVariable int id) {
-        cartDetailService.deleteCartDetailsById(id);
+        cartDetailService.deleteCartDetailById(id);
         return ResponseEntity.ok("CartDetail deleted successfully");
     }
 }
